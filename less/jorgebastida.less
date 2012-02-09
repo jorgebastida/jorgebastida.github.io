@@ -1,0 +1,150 @@
+@gridColumnWidth:  60px;
+
+.container{
+
+    .intro{
+
+        padding-top:50px;
+        p{
+            text-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+            font-size: 24px;
+            line-height: @baseLineHeight * 2;
+        }
+    }
+
+    .top{
+        margin-bottom:40px;
+        margin-top:10px;
+    }
+
+    .me_container{
+        text-align:center;
+    }
+
+    .me{
+        width:200px;
+        border:10px solid white;
+        border-bottom:30px solid white;
+        .box-shadow(0px 0px 7px rgba(0,0,0,0.5));
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        margin:30px 0px 0px 60px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        position:relative;
+        left:-50px;
+    }
+
+    a, a:visited, a:active{
+        text-decoration:none;
+        color:inherit;
+        background:rgba(0,0,0,0.06);
+        padding:1px 4px 1px 4px;
+    }
+
+    ul{
+        list-style-type:square;
+    }
+
+    li{
+        margin-bottom:5px;
+    }
+
+    .mini_img{
+        height:15px;
+        width:15px;
+    }
+    .mini_img_verti{
+        height:17px;
+        width:9px;
+    }
+
+    .mini_img_horiz{
+        height:15px;
+        width:21px;
+    }
+
+    h2{
+        img{
+            padding-right:10px;
+            position: relative;
+            top:4px;
+        }
+
+        min-height:40px;
+    }
+    .sub{
+        margin-bottom:10px;
+        h4{
+            margin-bottom:5px;
+        }
+    }
+
+}
+
+footer{
+
+    text-align: center;
+
+    ul{
+        list-style-type: none;
+        margin:0px;
+        padding: 0px;
+
+        li{
+            display:inline;
+            padding-right:10px;
+        }
+    }
+}
+
+
+h2 {
+  font-size: 21px;
+  line-height: @baseLineHeight * 2;
+}
+
+body{
+    color:#444444;
+}
+
+
+@media (max-width: 768px){
+
+    footer{
+        ul{
+            li{
+                display:block;
+                padding-right:0px;
+            }
+        }
+    }
+
+    .container{
+        .intro{
+            padding-top:20px;
+        }
+
+        .top{
+            margin-bottom:20px;
+        }
+    }
+}
+
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+
+@media (min-width: 768px) and (max-width: 980px) {
+
+    .container{
+        .intro{
+
+            p{
+                font-size: 21px;
+            }
+        }
+    }
+  // Fixed grid
+  #gridSystem > .generate(12, 52px, 10px);
+}
